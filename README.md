@@ -1,10 +1,39 @@
 # Getting started
 
-To get started the quick and easy way, simply clone this repo...or follow the steps below.
+To get started the quick and easy way, simply clone this repo. This options has the added value of additional file configs, vscode settings, etc. 
+
+...or do it on your own via the steps below.
 
 ## Manually getting started
 
-1. Run `yarn create vite` as described [here](https://vitejs.dev/guide/)
+1. Create Vite + Vue 3 project as described [here](https://vitejs.dev/guide/)
+
+   ```bash
+   yarn create vite
+   ```
+
+1. Add Eslint + Prettier support
+
+   - Install packages
+
+     ```bash
+     yarn add -D prettier eslint @typescript-eslint/eslint-plugin @typescript-eslint/parser @vue/eslint-config-typescript eslint-config-prettier eslint-plugin-prettier eslint-plugin-vue vue-eslint-parser
+     ```
+
+   - Create files and configs
+
+     ```bash
+     touch .eslintrc
+     touch .prettierrc
+     ```
+
+   - Update packages scripts
+
+     ```json
+     "lint": "eslint . --ext .ts,.js,.vue --experimental-specifier-resolution=node"
+     ```
+
+1.
 
 # Fire things up 🔥
 
